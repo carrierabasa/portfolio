@@ -1,11 +1,39 @@
 .navbar-brand {
   font-weight: 500;
+  border-bottom: 3px solid transparent;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 300;
 }
+
+
+
+@media (min-width: 576px) {
+  	.nav-item.active > .nav-link { 
+ 	border-bottom: none;
+}
+
+@media (min-width: 768px) {
+	.nav-item.active > .nav-link { 
+	 border-bottom: 3px solid #000;
+	}
+}
+
+@media (min-width: 992px) {
+	.nav-item.active > .nav-link { 
+	border-bottom: 3px solid #000;
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav-item.active > .nav-link { 
+	border-bottom: 3px solid #000;
+	}
+}
+
+
 
 
 
