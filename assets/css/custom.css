@@ -1,3 +1,14 @@
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, adelle, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+
 .navbar-brand {
   font-weight: 500;
   border-bottom: 3px solid transparent;
@@ -6,6 +17,15 @@
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 300;
+  font-family: adelle-sans;
+}
+
+.navbar {
+  font-family: adelle-sans;
+}
+
+.figure-caption {
+  font-family: adelle-sans;
 }
 
 
@@ -37,6 +57,7 @@ h1, h2, h3, h4, h5, h6,
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  font-family: adelle-sans;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -104,4 +125,10 @@ h1, h2, h3, h4, h5, h6,
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.card-project-info {
+
+  margin-bottom: 30px;
+  max-width: 700px;
 }
