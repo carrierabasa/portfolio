@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>exp.o Visibility | Search Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="https://use.fontawesome.com/23a81c84dd.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="86" height="33"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-hover">  
+
+            <li class="dropdown vizbrand">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">ISF</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-hover">
+          
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shipment Status <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="shipment-status-in-transit.html"> <i class="fa fa-thumb-tack active-pin pin" aria-hidden="true" title="Unpin"></i> Shipment Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Container Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Order Status</a></li>
+              </ul>
+          </li>
+          <li><a href="reporting-starred.html">Reporting</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-hover">
+            <li><a href="#">Carrie R <i class="fa fa-user" aria-hidden="true"></i></a></li>
+            <li><a href="#">Notifications <span class="badge">3</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+
+          
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <div class="dropdown">
+                  <input type="text" class="form-control" data-toggle="dropdown" placeholder="Reference number">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="searchResults">Search</button>
+                  </span>
+                     <ul class="dropdown-menu dropdown-menu-left custom-dropdown custom-dropdown-search" aria-labelledby="dLabel">
+                      <li class="dropdown-header">Recent searches</li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6200028924</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6840191685</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 5840064884</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Saved searches</li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 28132 Containers ZIM Rotterdam</a></li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 286* Containers ETA Next Week</a></li>
+                    </ul>
+                </div> <!--/dropdown--> 
+              </div><!-- /input-group -->   
+            </form> 
+              
+            <script type="text/javascript">
+              document.getElementById("searchResults").onclick = function () {
+              location.href = "search-results.html";
+              };
+            </script>
+
+
+            
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <nav>
+      
+      <div class="breadcrumb-row">
+
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Search Results</li>
+      </ol> 
+
+      </div>
+
+    </nav>
+    
+
+    <div class="container-fluid">
+  
+      <!--row-->
+      <div class="row">
+
+        <!--filters-->
+        <div class="col-md-2 col-sm-3 search-filter-column">
+
+        <h4 class="text-muted">Filter results</h4>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Product</div>
+            <div class="panel-body">
+              <ul class="list-unstyled">
+               <li><a href="search-results.html"><i class="fa fa-chevron-left fa-fw" aria-hidden="true"></i> All results</a></li>
+               <li class="active-facet">Containers <span class="filter-count">(8)</span></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Documents</div>
+            <div class="panel-body">
+              <ul class="list-unstyled">
+               <li><a href="search-results-documents.html">All Documents</a> <span class="filter-count">(2)</span></li>
+               <li><a href="search-results-documents.html">Order Management Bill of Lading Summary</a> <span class="filter-count">(2)</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Status</div>
+            <div class="panel-body">
+              
+              
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Services Completed <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Origin</div>
+            <div class="panel-body">
+              
+              <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Chennai, India <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Destination</div>
+            <div class="panel-body">
+              
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Seattle, WA <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Mode</div>
+            <div class="panel-body">
+              
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Ocean <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Vessel</div>
+            <div class="panel-body">
+              
+              <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                APL Qingdao <span class="filter-count">(1)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                CMA CGM Norma <span class="filter-count">(1)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                CMA CGM Rigoletto <span class="filter-count">(1)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                ZIM Antwerp <span class="filter-count">(1)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                ZIM Djibouti <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="" checked>
+                ZIM Rotterdam <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          
+
+          
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Size</div>
+            <div class="panel-body">
+              
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  20 <span class="filter-count">(1)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  40 <span class="filter-count">(1)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Move Type</div>
+            <div class="panel-body">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  CFS/CY <span class="filter-count">(2)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div><!--/filters-->
+
+
+        <!--results-->
+        <div class="col-md-10 col-sm-9">
+
+          <ul class="list-inline search-breadcrumb">
+            <li><span class="search-count">2 results for <strong><em>28132</em></strong> </span></li>
+            <li>-</li>
+            <li><div class="search-tag">Containers <a href="search-results.html"><i class="fa fa-times remove-tag" aria-hidden="true"></i></a></div></li>
+            <li><div class="search-tag">ZIM Rotterdam  <a href="search-results-containers.html"><i class="fa fa-times remove-tag" aria-hidden="true"></i></a></div></li>
+          </ul>
+
+          <!--result options-->
+         
+            <div class="result-options">
+                
+                  <label>Sort by</label>
+                  <div class="btn-group" data-toggle="buttons" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Estimated Arrival Final Destination
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Confirmed on Board</a></li>
+                        <li><a href="#">Estimated Time of Depature</a></li>
+                        <li><a href="#">Actual Departure</a></li>
+                        <li><a href="#">Confirmed on Board: Descending</a></li>
+                        <li><a href="#">Estimated Arrival Final Destination</a></li>
+                        <li><a href="#">Actual Arrival Final Destination</a></li>
+                        <li><a href="#">Estimated Delivery</a></li>
+                        <li><a href="#">Actual Delivery</a></li>
+                   
+                      </ul>
+                    </div>
+                    <label class="btn btn-default btn-sm"><input type="radio" name="options" id="option1" autocomplete="off"><i class="fa fa-arrow-up" aria-hidden="true"></i></label>
+                    <label class="btn btn-default btn-sm active"><input type="radio" name="options" id="option2" autocomplete="off" checked><i class="fa fa-arrow-down" aria-hidden="true"></i></label>
+                    
+                  </div>
+          
+                  <div class="dropdown">
+                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Export
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">CSV</a></li>
+                      <li><a href="#">Excel (XLSX)</a></li>            
+                    </ul>
+                  </div>
+
+               <button class="btn btn-default btn-sm" type="submit">Follow these containers</button>
+
+               <button class="btn btn-default btn-sm" type="submit">Save this search</button>
+            </div>    
+           
+          <!--/result options-->
+
+
+          <ul class="list-unstyled search-results">
+
+
+            <li>
+               <strong>Container <a href="#">APZU4750677</a></strong><br /> 
+               <span class="label label-default">Services Completed: Delivered</span><br /> 
+               Delivered to Consignee on 14-Apr-2017<br /> 
+               Chennai, India <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Seattle, WA<br />   
+
+               <ul class="list-inline">
+                <li><small class="text-muted">Vessel</small><br />ZIM Rotterdam</li>
+                <li><small class="text-muted">Size</small><br />40</li>
+                <li><small class="text-muted">Volume</small><br />53.536 CBM</li>
+                <li><small class="text-muted">Packages</small><br />819</li>
+              </ul>
+            </li>    
+
+            <li>
+               <strong>Container <a href="#">GATU1317895</a></strong><br /> 
+               <span class="label label-default">Services Completed: Delivered</span><br /> 
+               Cont Returned to Carrier on 13-Apr-2017<br /> 
+               Chennai, India <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Seattle, WA<br />   
+
+               <ul class="list-inline">
+                <li><small class="text-muted">Vessel</small><br />ZIM Rotterdam</li>
+                <li><small class="text-muted">Size</small><br />20</li>
+                <li><small class="text-muted">Volume</small><br />21.129 CBM</li>
+                <li><small class="text-muted">Packages</small><br />334</li>
+              </ul>
+            </li> 
+
+
+          </ul>
+
+
+
+          
+
+
+        </div><!--/results-->
+
+
+
+      </div><!--/row-->
+
+
+
+    </div><!-- /container -->
+
+  
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+   
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,416 @@
+
+
+
+body {
+  background-color: #eee;
+}
+
+.home {
+  margin-top: 20px;
+}
+
+.navbar-default {
+  background-color: #222;
+}
+
+.navbar {
+  height: 55px;
+}
+
+.navbar-default .navbar-nav > li > a  {
+  color: #ccc;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.vizbrand  {
+  font-size: 18px;
+}
+
+.badge {
+  background-color: #d0332e;
+}
+
+.navbar-hover > li:hover,
+.navbar-hover > li:focus {
+    background: #404040;
+    border-bottom: solid 4px #d0332e;
+  }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #090909;
+  border-bottom: solid 4px #d0332e;
+}
+
+.navbar-default .navbar-nav > .navbar-hover .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #090909;
+  border-bottom: none;
+}
+
+
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #404040;
+  border-bottom: none;
+}
+
+.breadcrumb-row {
+  border-bottom: 1px solid transparent;
+  margin-bottom: 10px;
+  background-color: #ddd;
+  padding-top: 10px;
+  }
+    
+.breadcrumb {
+  padding: 0 0 0 15px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  }
+
+.breadcrumb > li + li:before {
+  color: #777;
+}
+
+.search-filter-column > .panel > .panel-body {
+  max-height: 150px; 
+  overflow: auto;
+  font-size: 12px; 
+}
+
+.search-filter-column > .panel {
+  margin-bottom: 10px;
+}
+
+.search-filter-column > .panel > .panel-body {
+  padding: 10px;
+}
+
+.search-filter-column > .panel > .panel-heading {
+  padding: 5px 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.filter-count {
+  color:#999;
+}
+
+.active-facet-noindent {
+  font-weight: bold;
+}
+
+.active-facet {
+  font-weight: bold;
+  margin-left: 17px;
+}
+
+
+.search-results > li {
+  margin-bottom: 25px;
+}
+
+.most-relevant-result {
+  display: inline-block;
+}
+
+.most-relevant-result > div > ul > li > .label,
+.search-results > li > .label {
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+
+
+.result-options {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.result-options > div {
+  display: inline-block;
+}
+
+.search-filter-column > h4 {
+  margin-top: 0;
+}
+
+
+.search-filter-column > .panel > .panel-body > .checkbox > label > input[type="checkbox"] {
+  margin: 2px -20px 0;
+}
+
+.search-filter-column > .panel > .panel-body > .checkbox {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.search-count {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+
+.search-tag {
+  color: #fff;
+  font-size: 12px;
+  background-color: #337ab7;
+  display: inline-block;
+  padding: 3px 6px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 4px;
+  margin:0px 2px;
+}
+
+.search-breadcrumb > li {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+.remove-tag {
+  margin-left:3px;
+  color:#d9edf7;
+}
+
+.remove-tag:hover {
+  color:#fff;
+}
+
+.remove-icon,
+.star {
+  color:#ccc;
+}
+
+.remove-icon:hover,
+.star:hover {
+  color:#333;
+}
+
+.remove-icon {
+  margin-right:10px;
+}
+
+
+.pin {
+  margin-right:10px;
+}
+
+.active-pin {
+  color: #337ab7;
+}
+
+.active-pin:hover {
+  color: #23527c;
+}
+
+
+.inactive-pin {
+  color:#ccc;
+}
+
+.inactive-pin:hover {
+  color:#333;
+}
+
+.active-star {
+  color: #337ab7;
+}
+
+.active-star:hover {
+  color: #23527c;
+}
+
+#reports table tr td,
+table#reports-list tr td,
+table#recent-results tr td { 
+  vertical-align: middle;
+}
+
+#reports table tr td button,
+table#recent-results tr td button { 
+  opacity: 0;
+  transition: opacity .05s ease-in;
+}
+
+#reports table tr:hover td button,
+table#recent-results tr:hover td button { 
+  opacity: 1;
+}
+
+#reports table tr.selected-row td button { 
+  opacity: 1;
+}
+
+
+
+#reports table tr.selected-row:hover { 
+  background-color: #2e6da4;
+}
+
+
+.table > thead > tr > th {
+  font-weight: 700;
+}
+
+.status {
+  padding: 10px 0;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+.status:hover {
+  background-color: #d9edf7;
+}
+
+.status-count {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.milestone > a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .hide-arrow::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.required {
+  font-weight: 700;
+}
+
+.field-heading {
+  font-size: 13px;
+  }
+
+  .filter {
+  display: inline-block;
+  vertical-align:top;
+  margin: 0 2px 15px 2px;
+}
+
+.filter > label {
+  font-weight: 400;
+}
+
+.filter > div > a > label {
+  font-weight: 400;
+}
+
+#row-no-top-margin {
+  margin-top:-10px
+}
+
+#left-column {
+ margin-left: -15px;
+ margin-right: -15px
+}
+
+#left-column > ul > li {
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  margin-left: 0
+}
+
+#left-column > ul > li.active {
+  background-color: #ccc;
+}
+
+#left-column > ul > li.active > i {
+  color: #333;
+}
+
+#left-column > ul > li.active:hover i { 
+  color: #333;
+}
+
+#left-column > ul > li.active:hover { 
+  background-color: #ccc;
+}
+
+#left-column > ul > li { 
+  background-color: transparent;
+}
+
+#left-column > ul > li > i { 
+  color: #337ab7;
+}
+
+#left-column > ul > li:hover { 
+  background-color: #E8E8E8;
+}
+
+#left-column > ul > li:hover > a { 
+  color:#23527c;
+  text-decoration: none;
+}
+
+#left-column > ul > li:hover > i { 
+  color:#23527c;
+}
+
+#reports { 
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  height:100vh;
+}
+
+#reports > h4 { 
+  margin-left: 10px;
+}
+
+
+#results-header {
+  vertical-align: middle; 
+  margin-left: 10px
+}
+
+.results-options {
+  display: inline-block; 
+  padding:5px
+}
+
+#right-column h5.active {
+  font-weight: bold;
+}
+
+#right-column h6 {
+  padding-top: 10px;
+}
+
+.selected-row {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+

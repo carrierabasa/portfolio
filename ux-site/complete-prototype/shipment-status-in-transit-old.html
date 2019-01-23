@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>exp.o Visibility | Search Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="https://use.fontawesome.com/23a81c84dd.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="86" height="33"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-hover">  
+
+            <li class="dropdown vizbrand">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">ISF</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-hover">
+          
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shipment Status <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="shipment-status-in-transit.html">Shipment Status</a></li>
+                <li><a href="#">Container Status</a></li>
+                <li><a href="#">Order Status</a></li>
+              </ul>
+            </li>
+          <li><a href="#about">Reporting</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-hover">
+            <li><a href="#">Carrie R <i class="fa fa-user" aria-hidden="true"></i></a></li>
+            <li><a href="#">Notifications <span class="badge">3</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+
+          
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <div class="dropdown">
+                  <input type="text" class="form-control" data-toggle="dropdown" placeholder="Reference number">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="searchResults">Search</button>
+                  </span>
+                    <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dLabel">
+                      <li class="dropdown-header">Recent searches</li>
+                      <li><a href="#">6200028924 <i class="fa fa-times remove-icon pull-right" aria-hidden="true"></i></a></li>
+                      <li><a href="#">6840191685 <i class="fa fa-times remove-icon pull-right" aria-hidden="true"></i></a></li>
+                      <li><a href="#">5840064884 <i class="fa fa-times remove-icon pull-right" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Saved searches</li>
+                      <li><a href="search-results-vessel.html">28132 Containers ZIM Ro... <i class="fa fa-times remove-icon pull-right" aria-hidden="true"></i></a></li>
+                      <li><a href="search-results-vessel.html">286* Containers ETA Nex... <i class="fa fa-times remove-icon pull-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div> <!--/dropdown--> 
+              </div><!-- /input-group -->   
+            </form> 
+              
+            <script type="text/javascript">
+              document.getElementById("searchResults").onclick = function () {
+              location.href = "search-results.html";
+              };
+            </script>
+
+
+            
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <nav>
+      
+      <div class="breadcrumb-row">
+
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Shipment Status</li>
+      </ol> 
+
+      </div>
+
+    </nav>
+    
+
+    <div class="container-fluid">
+
+
+      
+        <!--row-->
+      <div class="row">
+
+        <!--filters-->
+        <div class="col-md-2 col-sm-3 search-filter-column">
+
+        <h4 class="text-muted">Filter results</h4>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Status</div>
+            <div class="panel-body">
+              <ul class="list-unstyled">
+               <li><a href="">At Origin</a> <span class="filter-count">(98)</span></li>
+               <li class="active-facet-noindent">In Transit <span class="filter-count">(71)</span></li>
+               <li><a href="">At Destination</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Completed</a> <span class="filter-count">(149)</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Documents</div>
+            <div class="panel-body">
+              <ul class="list-unstyled">
+               <li><a href="search-results-documents.html">All Documents</a> <span class="filter-count">(440)</span></li>
+               <li><a href="">3461 Entry/Immediate Delivery</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">7501 Entry Summary</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">ABI Release Message</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Carrier Certificate</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Certificate of Origin</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Commercial Bill of Lading</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Commercial Invoice</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Expeditors Billing Invoice</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">House Airway Bill</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">House Ocean Bill</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Importer Security Filing</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Order Management Bill of Lading Summary</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Order Management Manifest</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Packing List</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">POD - Proof of Delivery</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Proof of Delivery</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Sea WayBill</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Shipment Alert</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Shipment Pre-Advice</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">Truck Bill of Lading</a> <span class="filter-count">(8)</span></li>
+               <li><a href="">US Cargo Release Form</a> <span class="filter-count">(8)</span></li>
+              </ul>
+            </div>
+          </div>
+
+           <div class="panel panel-default">
+            <div class="panel-heading">Origin</div>
+            <div class="panel-body">
+              
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Bangkok, Thailand <span class="filter-count">(4)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Callao, Peru <span class="filter-count">(1)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Chennai, India <span class="filter-count">(19)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Coimbatore, India <span class="filter-count">(3)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Ho Chi Minh City, Vietnam <span class="filter-count">(8)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Qingdao, China <span class="filter-count">(4)</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Shanghai, China <span class="filter-count">(17)</span>
+                </label>
+              </div>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Xiamen, China <span class="filter-count">(12)</span>
+                </label>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Destination</div>
+            <div class="panel-body">
+              
+              <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Pudong, Shanghai, China <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="" checked>
+                Seattle, WA <span class="filter-count">(46)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Tacoma, WA <span class="filter-count">(20)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">Mode</div>
+            <div class="panel-body">
+              
+              <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Air <span class="filter-count">(2)</span>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                Ocean <span class="filter-count">(6)</span>
+              </label>
+            </div>
+            </div>
+          </div>
+
+        </div><!--/filters-->
+
+
+        <!--results-->
+        <div class="col-md-10 col-sm-9">
+
+           
+
+          <ul class="list-inline search-breadcrumb">
+            <li><span class="search-count">46 shipments <strong><em>In Transit</em></strong></span></li>
+            <li>-</li>
+            <li><div class="search-tag">Destination: Seattle, WA <a href=""><i class="fa fa-times remove-tag" aria-hidden="true"></i></a></div></li>
+          </ul>
+
+          <!--result options-->
+         
+            <div class="result-options">
+                    
+                  <div class="dropdown">
+                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Export
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">CSV</a></li>
+                      <li><a href="#">Excel (XLSX)</a></li>            
+                    </ul>
+                  </div>
+
+
+               <button class="btn btn-default btn-sm" type="submit">Notify me</button>
+
+               <button type="button" class="btn btn-sm btn-default active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                Save Filters: <strong>On</strong>
+               </button>
+            </div>    
+           
+          <!--/result options-->
+
+             <!--results-->
+        <div class="panel panel-default">
+          <div class="table-responsive">
+            <table class="table table-hover" id="data-tables-example"> 
+                <thead> 
+                    <tr>
+                        <th>Primary reference</th>
+                        <th>Expeditors reference</th> 
+                        <th>Origin</th> 
+                        <th>Destination</th>
+                        <th>Status</th>
+                        <th>Confirmed on Board</th> 
+                        <th>Estimated Arrival Final Destination</th>
+                    </tr>
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr>   
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+                    <tr> 
+                        <td>1234567890</td>
+                        <td><a href="#">987654321</a></td>
+                        <td>Shanghai, China (SHA)</td>
+                        <td>Seattle, WA (SEA)</td>
+                        <td>In Transit, Docs Received at Destination</td>
+                        <td>24-May-2017</td>
+                        <td>20-Apr-2017</td>
+                    </tr> 
+
+                    
+                </tbody> 
+            </table>
+          </div>  
+        </div>
+        <!--/results-->
+          
+
+
+        </div><!--/results-->
+
+
+
+      </div><!--/row-->
+
+      <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Design notes</strong><br /> Need to update the filters on this page to reflect the 71 results. Add milestone filter and any other filters that make sense for shipments.
+        <ul>
+          <li>Statuses are the facets here.</li>
+          <li>The facets/filters here would work the same as the search filters/facets.</li>
+        </ul>
+      </div>
+
+
+    </div><!-- /container -->
+
+  
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+   
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- datatables JavaScript-->
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#data-tables-example').DataTable();
+
+      } );
+    </script>
+
+    <script type="text/javascript">
+    $('#data-tables-example').dataTable( {
+        "searching": false,
+        "lengthChange": false,
+        "paging": false,
+        "info": false
+      } );
+       </script>
+     
+  </body>
+</html>

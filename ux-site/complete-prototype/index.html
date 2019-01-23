@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>exp.o Visibility</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="https://use.fontawesome.com/23a81c84dd.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+
+  <body class="home">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="86" height="33"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-hover">  
+
+            <li class="dropdown vizbrand">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">ISF</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-hover">
+          
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shipment Status <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="shipment-status-in-transit.html"> <i class="fa fa-thumb-tack active-pin pin" aria-hidden="true" title="Unpin"></i> Shipment Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Container Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Order Status</a></li>
+              </ul>
+          </li>
+          <li><a href="reporting-starred.html">Reporting</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-hover">
+            <li><a href="#">Carrie R <i class="fa fa-user" aria-hidden="true"></i></a></li>
+            <li><a href="#">Notifications <span class="badge">3</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+
+          
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <div class="dropdown">
+                  <input type="text" class="form-control" data-toggle="dropdown" placeholder="Search Visbility">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="searchResults">Search</button>
+                  </span>
+                     <ul class="dropdown-menu dropdown-menu-left custom-dropdown custom-dropdown-search" aria-labelledby="dLabel">
+                      <li class="dropdown-header">Recent searches</li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6200028924</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6840191685</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 5840064884</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Saved searches</li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 28132 Containers ZIM Rotterdam</a></li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 286* Containers ETA Next Week</a></li>
+                    </ul>
+                </div> <!--/dropdown--> 
+              </div><!-- /input-group -->   
+            </form> 
+              
+            <script type="text/javascript">
+              document.getElementById("searchResults").onclick = function () {
+              location.href = "search-results.html";
+              };
+            </script>
+
+
+            
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Shipment Status <a href=""><i class="fa fa-thumb-tack active-pin pull-right" aria-hidden="true" title="Unpin"></i></a></h3>
+
+            </div>
+
+            <div class="panel-body">
+              
+              <div class="row">
+
+                <div class="col-md-3 text-center"><div class="status"><a href="">At Origin<br /><span class="status-count">98</span></a></div></div><!--/col-->
+                <div class="col-md-3 text-center"><div class="status"><a href="shipment-status-in-transit.html">In Transit<br /><span class="status-count">46</span></a></div></div><!--/col-->
+                <div class="col-md-3 text-center"><div class="status"><a href="">At Destination<br /><span class="status-count">8</span></a></div></div><!--/col-->
+                <div class="col-md-3 text-center"><div class="status"><a href="">Completed<br /><span class="status-count">149</span></a></div></div><!--/col-->
+
+              </div><!--/row-->
+
+            </div>
+          </div>  
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><a href="" style="color:#337ab7">Air &amp; Ocean Analysis</a> <a href=""><i class="fa fa-thumb-tack active-pin pull-right" aria-hidden="true" title="Unpin"></i></a></h3>
+
+            </div>
+
+            <div class="panel-body">
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Top <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Bottom</a></li>
+                    <li><a href="#">Top</a></li>
+                    
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    10 <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">20</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Destination <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Lane</a></li>
+                    <li><a href="#">Origin</a></li>
+                  </ul>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shipments <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Estimated charges (USD)</a></li>
+                    <li><a href="#">Shipments</a></li>
+                    <li><a href="#">Weight</a></li>
+                  </ul>
+                </div>
+
+              
+              <img src="assets/images/analytics-dashboard.png" width="590" height="449" class="center-block">
+
+            </div>
+          </div>  
+
+
+
+
+        </div><!--/col-->
+
+        <div class="col-md-6">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-star" aria-hidden="true"></i> Starred</h3>
+
+            </div>
+
+            <table class="table table-hover">
+              <tr>
+                <td>Shipment <a href="">62G0064246</a></td>
+                <td>In Transit, Docs Received at Destination</td>
+                <td>MAA <i class="fa fa-long-arrow-right" aria-hidden="true"></i> SEA</td>
+              </tr>
+              <tr>
+                <td>Shipment <a href="">62G0063863</a></td>
+                <td>In Transit</td>
+                <td>MAA <i class="fa fa-long-arrow-right" aria-hidden="true"></i> SEA</td>
+              </tr>
+              <tr>
+                <td>Container <a href="">GESU6675259</a></td>
+                <td>In Transit, Docs Received at Destination</td>
+                <td>MAA <i class="fa fa-long-arrow-right" aria-hidden="true"></i> SEA</td>
+              </tr>
+              <tr>
+                <td>Order <a href="">28291</a></td>
+                <td>Partial: Shipped 5,036 of 12,095</td>
+                <td>MAA <i class="fa fa-long-arrow-right" aria-hidden="true"></i> SEA</td>
+              </tr>
+              <tr>
+                <td>Declaration <a href="">231-1632977-7</a></td>
+                <td>Released, Pending Liquidation</td>
+                <td>SHA <i class="fa fa-long-arrow-right" aria-hidden="true"></i> PF1</td>
+              </tr>
+            </table>
+          </div> 
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Track Multiple</h3>
+
+            </div>
+
+            <div class="panel-body">
+
+              <p class="text-muted small">Enter up to 50 references, one per line</p>
+
+              <p><textarea class="form-control" rows="3"></textarea></p>
+
+              <p><input class="btn btn-primary btn-sm pull-right" type="submit" value="Track"></p>
+
+            </div>
+
+          </div> 
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Recent Results <span class="pull-right" style="font-size: 14px"><a href="reporting-starred.html">All results</a></span></h3> 
+
+            </div>
+
+            <table class="table table-hover" id="recent-results">
+              <tr>
+                <th class="text-muted">Report name</th>
+                <th class="text-muted">Created</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>On the Water (MAA)</td>
+                <td>08:09 AM PDT</td>
+                <td class="text-right">
+                  <!-- Split button -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm">Download</button>
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+                      <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Delete</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Unsubscribe</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Email notifications</li>
+                      <li><a href="#">On <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">Off</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Delivery options</li>
+                      <li><a href="#">Email attachment</a></li>
+                      <li><a href="#">Online only <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Keep this report's results for</li>
+                      <li><a href="#">1 month</a></li>
+                      <li><a href="#">2 months <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">6 months</a></li>
+                      <li><a href="#">1 year</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Open Orders</td>
+                <td>12-Jun-2017 08:04 AM PDT</td>
+                <td class="text-right">
+                  <!-- Split button -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm">Download</button>
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+                      <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Delete</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Unsubscribe</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Email notifications</li>
+                      <li><a href="#">On</a></li>
+                      <li><a href="#">Off <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Delivery options</li>
+                      <li class="disabled"><a href="#">Email attachment</a></li>
+                      <li class="disabled"><a href="#">Online only <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Keep this report's results for</li>
+                      <li><a href="#">1 month</a></li>
+                      <li><a href="#">2 months <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">6 months</a></li>
+                      <li><a href="#">1 year</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Arriving MAA Next 7 Days</td>
+                <td>12-Jun-2017 08:04 AM PDT</td>
+                <td class="text-right">
+                  <!-- Split button -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm">Download</button>
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+                      <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Delete</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Unsubscribe</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Email notifications</li>
+                      <li><a href="#">On <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">Off</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Delivery options</li>
+                      <li><a href="#">Email attachment</a></li>
+                      <li><a href="#">Online only <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Keep this report's results for</li>
+                      <li><a href="#">1 month</a></li>
+                      <li><a href="#">2 months <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">6 months</a></li>
+                      <li><a href="#">1 year</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>JFK Exports</td>
+                <td>5-Jun-2017 08:04 AM PDT</td>
+                <td class="text-right">
+                  <!-- Split button -->
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-sm">Download</button>
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download</a></li>
+                      <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> Share</a></li>
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Delete</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Unsubscribe</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Email notifications</li>
+                      <li><a href="#">On <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">Off</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Delivery options</li>
+                      <li><a href="#">Email attachment</a></li>
+                      <li><a href="#">Online only <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Keep this report's results for</li>
+                      <li><a href="#">1 month</a></li>
+                      <li><a href="#">2 months <i class="fa fa-check" aria-hidden="true"></i></a></li>
+                      <li><a href="#">6 months</a></li>
+                      <li><a href="#">1 year</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div> 
+
+
+        </div><!--/col-->
+
+       
+
+
+      </div><!--/row-->
+        
+   
+       <!-- design notes -->
+      <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Design notes</strong><br /> 
+        <ul>
+          <li>Inspiration: Google Now</li>
+          <li>The purpose of the home page is to bring visibility to things that are most important to the user.</li>
+          <li>Pinned reports</li>
+              <ul>
+                  <li>Users could have the ability to add/pin a status dashboard to the homepage</li>
+                  <li>The option to pin a dashboard is located in the nav bar dropdown menu</li>
+                  <li>Any edits made to a dashboard report would be reflected in the homepage totals</li>
+                  <li>Users have the ability to add Analytics reports to the dashboard. Example: see the Google Analytics <em>Add to dashboard</em> feature.</li>
+                  <li>If a user has bookmarked filters on an exp.o Analytics report, the report on the homepage would refect those settings</li>
+                  
+
+              </ul>
+          <li>Starred: Panel would display automatically when the user has starred at least one thing (shipment, container, order, etc)</li>
+        </ul>  
+      </div><!-- /design notes -->     
+
+
+    </div><!-- /container -->
+
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

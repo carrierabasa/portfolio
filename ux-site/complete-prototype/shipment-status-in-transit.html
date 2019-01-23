@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>exp.o Visibility | Shipments In Transit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <script src="https://use.fontawesome.com/23a81c84dd.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="86" height="33"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-hover">  
+
+            <li class="dropdown vizbrand">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">ISF</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-hover">
+          
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shipment Status <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="shipment-status-in-transit.html"> <i class="fa fa-thumb-tack active-pin pin" aria-hidden="true" title="Unpin"></i> Shipment Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Container Status</a></li>
+                <li><a href="#"><i class="fa fa-thumb-tack inactive-pin pin" aria-hidden="true" title="Pin to Home Page"></i> Order Status</a></li>
+              </ul>
+          </li>
+          <li><a href="reporting-starred.html">Reporting</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-hover">
+            <li><a href="#">Carrie R <i class="fa fa-user" aria-hidden="true"></i></a></li>
+            <li><a href="#">Notifications <span class="badge">3</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+
+
+          
+            <form class="navbar-form navbar-right">
+              <div class="input-group">
+                <div class="dropdown">
+                  <input type="text" class="form-control" data-toggle="dropdown" placeholder="Reference number">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="searchResults">Search</button>
+                  </span>
+                    <ul class="dropdown-menu dropdown-menu-left custom-dropdown custom-dropdown-search" aria-labelledby="dLabel">
+                      <li class="dropdown-header">Recent searches</li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6200028924</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 6840191685</a></li>
+                      <li><a href="#"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 5840064884</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Saved searches</li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 28132 Containers ZIM Rotterdam</a></li>
+                      <li><a href="search-results-vessel.html"><i class="fa fa-times remove-icon" aria-hidden="true" title="delete"></i> 286* Containers ETA Next Week</a></li>
+                    </ul>
+                </div> <!--/dropdown--> 
+              </div><!-- /input-group -->   
+            </form> 
+              
+            <script type="text/javascript">
+              document.getElementById("searchResults").onclick = function () {
+              location.href = "search-results.html";
+              };
+            </script>
+
+
+            
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <nav>
+      
+      <div class="breadcrumb-row">
+
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Shipment Status</li>
+      </ol> 
+
+      </div>
+
+    </nav>
+    
+
+    <div class="container-fluid">
+
+     <!--row-->
+      <div class="row" id="row-no-top-margin">
+
+        <div class="col-md-2 col-sm-3" id="left-column">
+
+          <ul class="list-unstyled">
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href=""> Shipments At Origin</a></li>
+            <li class="active"><i class="fa fa-chevron-right" aria-hidden="true"></i> Shipments In Transit</li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="">Shipments At Destination</a></li>
+            <li><i class="fa fa-chevron-right" aria-hidden="true"></i><a href=""> Shipments Completed</a></li>
+          </ul>
+
+        </div><!--/col-->
+
+        <div class="col-md-10 col-sm-9">
+
+
+          <h3>Shipments in Transit <i class="fa fa-star-o star" aria-hidden="true"></i></h3>
+
+          <p><a href="#" type="button" class="btn btn-sm btn-primary">Run</a>
+          <button type="button" class="btn btn-sm btn-default">Edit</button>
+          <button type="button" class="btn btn-sm btn-default">Reset to default report</button></p>
+
+
+          <!--filters-->
+
+
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p class="small text-muted">Please use at least 1 optional filter</p>
+            
+                            <div class="filter">
+                              <label>Origin</label><br />
+                              <input class="form-control" aria-describedby="basic-addon1" value="SHA" />
+                            </div>
+
+                            <div class="filter">
+                              <label>Destination</label><br />
+                              <input class="form-control" aria-describedby="basic-addon1" value="SEA" />
+                            </div>
+
+                        
+                            <div class="filter">
+                              <label>Mode</label><br />
+                              <select id="mode" multiple="multiple">
+                                <option value="1">Air</option>
+                                <option value="2">Ocean</option>
+                                <option value="3">Transcon</option>
+                                <option value="4">Rail</option>
+                                <option value="5">Sea/Air</option>
+                                <option value="6">Hub; Trans-shipment</option>
+                                <option value="7">Not defined</option>
+                              </select>
+                            </div>
+                          
+                            <div class="filter">
+                              
+                                <div class="dropdown milestone">
+                                  <a href="#" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <label class="selection">Milestone</label>
+                                    <span class="caret"></span>
+                                  </a>
+
+                                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li><a href="#">Estimated Time of Departure Date</a></li>
+                                    <li><a href="#">Actual Departure Date</a></li>
+                                    <li><a href="#">Estimated Arrival Final Destination Date</a></li>
+                                    <li><a href="#">Actual Arrival Final Destination Date</a></li>
+                                    <li><a href="#">Estimated Delivery Date</a></li>
+                                    <li><a href="#">Actual Delivery Date</a></li>
+                                  </ul>
+                                </div>
+                              
+
+                              <div id="sandbox-container">
+                                <div class="input-daterange input-group" id="datepicker">
+                                  <input type="text" class="input form-control" name="start" />
+                                  <span class="input-group-addon">to</span>
+                                  <input type="text" class="input form-control" name="end" />
+                                </div>
+                              </div>
+
+                            </div>
+
+
+            </div>
+          </div>
+
+     <!--/filters-->
+
+           
+
+
+          <h4>Results <small>46 | Data as of Jun 7, 2017, 1:53:19 PM</small></h4>
+           
+          <p>
+            <div class="dropdown">
+              <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Export
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel (XLSX)</a></li>            
+              </ul>
+            </div> 
+          </p>
+
+                 <!--results-->
+            <div class="panel panel-default">
+              <div class="table-responsive">
+                <table class="table table-hover" id="data-tables-example"> 
+                    <thead> 
+                        <tr>
+                            <th>Primary reference</th>
+                            <th>Expeditors reference</th> 
+                            <th>Origin</th> 
+                            <th>Destination</th>
+                            <th>Status</th>
+                            <th>Carrier Name</th>
+                            <th>Confirmed on Board</th> 
+                            <th>Estimated Arrival Final Destination</th>
+                        </tr>
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr>   
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Evergreen Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Evergreen Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Evergreen Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Yang Ming Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+                        <tr> 
+                            <td>1234567890</td>
+                            <td><a href="#">987654321</a></td>
+                            <td>Shanghai, China (SHA)</td>
+                            <td>Seattle, WA (SEA)</td>
+                            <td>In Transit, Docs Received at Destination</td>
+                            <td>Nippon Yusen Kaisha Line</td>
+                            <td>24-May-2017</td>
+                            <td>20-Apr-2017</td>
+                        </tr> 
+
+                        
+                    </tbody> 
+                </table>
+              </div>  
+            </div>
+            <!--/results-->
+          
+
+            </div><!--col-->
+      
+
+
+        </div><!--/row-->
+
+        
+   
+
+      <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Design notes</strong><br /> 
+        <ul>
+          <li>This applies the new reporting experience to the shipment status dashboard reports. Selecting the Edit button navigates the user the new editing workflow. Any saved edits will be reflected on the home page summary for the edited report.</li>
+
+          <li><em>Reset to default report</em> would be available if a user has edited the report. This would give them the option to revert back to the default version.</li>
+          
+          <li>We've heard from multiple users through the years that the Shipment Status Dashboard is useful, but they want the same options they have with other reports (e.g. export, sort, filter, etc)</li>
+        </ul>
+      </div>
+
+
+    </div><!-- /container -->
+
+
+  
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+   
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- datatables JavaScript-->
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#data-tables-example').DataTable();
+
+      } );
+    </script>
+
+    <script type="text/javascript">
+    $('#data-tables-example').dataTable( {
+        "searching": false,
+        "lengthChange": false,
+        "paging": false,
+        "info": false
+      } );
+       </script>
+
+       <!--multiselect-->
+          <script src="assets/js/bootstrap-multiselect.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              $(function () {
+                  $('#status').multiselect({
+                      includeSelectAllOption: false,
+                      selectAllNumber: false,
+                      allSelectedText: false
+                  });
+                  $('#btnSelected').click(function () {
+                      var selected = $("#status option:selected");
+                      var message = "";
+                      selected.each(function () {
+                          message += $(this).text() + " " + $(this).val() + "\n";
+                      });
+                      alert(message);
+                  });
+              });
+          </script>
+
+          <script type="text/javascript">
+          $(function () {
+              $('#mode').multiselect({
+                  includeSelectAllOption: false,
+                  selectAllNumber: false,
+                  allSelectedText: false
+              });
+              $('#btnSelected').click(function () {
+                  var selected = $("#mode option:selected");
+                  var message = "";
+                  selected.each(function () {
+                      message += $(this).text() + " " + $(this).val() + "\n";
+                  });
+                  alert(message);
+              });
+              });
+          </script><!--/multiselect-->
+
+          <!--milestone dropdown-->
+          <script type="text/javascript">
+            $(".dropdown-menu li a").click(function(){
+
+              $(this).parents(".milestone").find('.selection').text($(this).text());
+              $(this).parents(".milestone").find('.selection').val($(this).text());
+
+            });
+          </script><!--/milestone dropdown-->
+
+          <!--datepicker-->
+          <script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+          <script type="text/javascript">
+            $('#sandbox-container .input-daterange').datepicker({
+              todayBtn: "linked",
+              todayHighlight: true,
+              format: 'd-M-yyyy',
+              autoclose: true,
+              keepEmptyValues: true
+              });  
+          </script>
+
+
+          <!--/datepicker-->
+     
+  </body>
+</html>
