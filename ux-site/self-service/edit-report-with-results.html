@@ -1,0 +1,883 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Edit Report | exp.o Visibility</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+    <link href="css/textext.core.css" rel="stylesheet">
+    <link href="css/textext.plugin.arrow.css" rel="stylesheet">
+    <link href="css/textext.plugin.autocomplete.css" rel="stylesheet">
+    <link href="css/textext.plugin.tags.css" rel="stylesheet">
+    <link href="css/awesomplete.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/0e7698a823.js"></script>
+
+  
+    
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tracking</a></li>
+            <li><a href="#">Reporting</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Samantha</a></li>
+            <li><a href="#">Notifications <span class="badge">0</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+      <h2>New Customized Report</h2>
+
+      <p><button type="button" class="btn btn-sm btn-default">Save</button>
+      <button type="button" class="btn btn-sm btn-default">Save As</button>
+      <button type="button" class="btn btn-sm btn-default">Close</button> | 
+      <button type="button" class="btn btn-sm btn-primary">Run</button>
+      <button type="button" class="btn btn-sm btn-default">Schedule</button>  
+      
+      </p>
+
+      <div class="row">
+
+        <!--fields col-->
+        <div class="col-sm-4">
+
+          <!--fields panel-->
+          <div class="panel panel-default">
+            <div class="panel-heading">Fields
+            <div class="dropdown pull-right">
+              <button class="btn btn-link btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Transportation 
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Customs Brokerage</a></li>
+                <li><a href="#">Distribution</a></li>
+                <li><a href="#">Order Management</a></li>
+              </ul>
+            </div>
+
+
+            </div>
+            <div class="panel-body">
+
+              <p>
+                <div class="input-group">
+                  <input type="text" class="form-control input-sm" placeholder="Search fields">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </span>
+                </div>
+              </p>
+              
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title field-heading">
+                      <a role="button" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa fa-filter" aria-hidden="true"></i> Filters
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <!-- List group -->
+                    <ul class="list-group field-name">
+                      <li class="list-group-item">Date <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Destination <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Expeditors Reference <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Mode <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Origin <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Status <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title field-heading">
+                      <a class="collapsed accordion-toggle" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa fa-columns" aria-hidden="true"></i> Columns
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse drag-container" role="tabpanel" aria-labelledby="headingTwo" style="max-height: 235px; overflow: auto;">
+                    <!-- List group -->
+                    <ul class="list-group field-name">
+                      <li class="list-group-item">Actual Arrival Final Destination <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i></li>
+                      <li class="list-group-item">Actual Delivery <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Actual Departure <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Arrival Port <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Broker Reference <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Carrier Code <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Carrier Name <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Chargeable Weight <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Chargeable Weight Units <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Consignee Name <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Customs Clearance Date <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Customs Declaration # <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Destination <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">EI Branch Clearance <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">EI Branch Destination <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">EI Branch Origin <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Estimated Arrival Final Destination <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Estimated Arrival Unlading Port <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Estimated Delivery <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Estimated Time of Departure <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Expeditors Reference <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Flight # / Voyage # <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Freight Terms <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Goods Description <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Hazardous Flag <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">House Bill <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Mode <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Origin <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Pieces <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Pieces Units <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Port of Clearance <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Port of Delivery <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Port of Loading <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Port of Unlading <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Primary Reference <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Received at Origin <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Requested Delivery <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Security Filing Party <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Service Contract # <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Service Level <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Service Type <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Shipper Name <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Status <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Status Date <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i> </li>
+                      <li class="list-group-item">Status Event <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Vessel <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Volume <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Volume Units <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Weight <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+                      <li class="list-group-item">Weight Units <i class="fa fa-plus-circle pull-right" aria-hidden="true" title="Add to report"></i> <i class="fa fa-info-circle pull-right" aria-hidden="true" title="More information"></i>  </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div><!--/fields panel-->
+        </div><!--/fields col-->
+
+
+        <!--filters and columns col-->
+        <div class="col-sm-8">
+
+          <!--filters panel-->
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-filter" aria-hidden="true"></i></span> Filters</div>
+            <div class="panel-body">
+
+            <p class="text-muted small">Please use at least 1 optional filter</p>
+            
+              <div class="filter form-group">
+                <label class="control-label" style="font-weight: 700">*Customer</label><br />
+                <input class="form-control" rows="1" style="width: 210px"></textarea>
+              </div>
+
+              <div class="filter form-group">
+                <label class="control-label">Origin</label> <a href="#"><i class="fa fa-times remove-field" aria-hidden="true"></i></a><br />
+                <input class="form-control" rows="1" style="width: 210px"></textarea>
+              </div>
+
+              <div class="filter form-group">
+                <label class="control-label">Destination</label> <i class="fa fa-times remove-field" aria-hidden="true"></i><br />
+                <input class="form-control" rows="1" style="width: 210px"></textarea>
+              </div>
+
+
+              <div class="filter">
+                <label>Status</label> <i class="fa fa-times remove-field" aria-hidden="true"></i><br />
+                <select id="status" multiple="multiple">
+                  <option value="1">Not onhand</option>
+                  <option value="2">Onhand</option>
+                  <option value="3">In transit</option>
+                  <option value="4">Arrived, not released</option>
+                  <option value="5">Released</option>
+                  <option value="6">Pending delivery</option>
+                  <option value="7">Delivery (completed)</option>
+                </select>
+              </div>
+          
+              <div class="filter">
+                <label>Mode</label> <i class="fa fa-times remove-field" aria-hidden="true"></i><br />
+                <select id="mode" multiple="multiple">
+                  <option value="1">Air</option>
+                  <option value="2">Ocean</option>
+                  <option value="3">Transcon</option>
+                  <option value="4">Rail</option>
+                  <option value="5">Sea/Air</option>
+                  <option value="6">Hub; Trans-shipment</option>
+                  <option value="7">Not defined</option>
+                </select>
+              </div>
+            
+              <div class="filter">
+                
+                  <div class="dropdown milestone">
+                    <a href="#" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <label class="selection">Estimated Arrival Final Destination Date</label>
+                      <span class="caret"></span> <i class="fa fa-times remove-field" aria-hidden="true"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                      <li><a href="#">Estimated Time of Departure Date</a></li>
+                      <li><a href="#">Actual Departure Date</a></li>
+                      <li><a href="#">Estimated Arrival Final Destination Date</a></li>
+                      <li><a href="#">Actual Arrival Final Destination Date</a></li>
+                      <li><a href="#">Estimated Delivery Date</a></li>
+                      <li><a href="#">Actual Delivery Date</a></li>
+                    </ul>
+                  </div>
+                
+
+                <div id="sandbox-container">
+                  <div class="input-daterange input-group" id="datepicker">
+                    <input type="text" class="input form-control" name="start" />
+                    <span class="input-group-addon">to</span>
+                    <input type="text" class="input form-control" name="end" />
+                  </div>
+                </div>
+
+              </div>
+                  
+              <div class="filter">
+                <label>Expeditors reference</label> <i class="fa fa-times remove-field" aria-hidden="true"></i><br />
+                <textarea class="form-control" rows="2" aria-describedby="helpBlock"></textarea>
+
+                <span id="helpBlock" class="help-block"><small>Enter up to 50 references, one per line,<br /> 10 characters per reference</small></span>
+
+              </div>
+
+
+            </div>
+          </div><!--/filters panel-->
+
+          <!--columns panel-->
+          <div class="panel panel-default">
+            <div class="panel-heading"><i class="fa fa-columns" aria-hidden="true"></i> Columns <a href="#SortOrderModal" data-toggle="modal" class="pull-right">Edit sort order</a>
+</div> 
+            <div class="panel-body">
+            
+              <div class="column">Origin <i class="fa fa-times remove-field" aria-hidden="true"></i></div>
+              <div class="column">Destination <i class="fa fa-times remove-field" aria-hidden="true"></i></div>
+              <div class="column">Expeditors Reference <i class="fa fa-arrow-up" aria-hidden="true" title="1st sort: ascending"></i>1 <i class="fa fa-times remove-field" aria-hidden="true"></i></div>
+              <div class="column">Status <i class="fa fa-times remove-field" aria-hidden="true"></i></div>
+              <div class="column">Primary Reference <i class="fa fa-times remove-field" aria-hidden="true"></i></div>
+
+            </div>
+          </div><!--/columns panel-->
+
+        </div><!--/filters and columns col-->
+
+      </div><!--/row-->
+          
+      
+      <div>     
+    <h3>Results
+        <span>
+            
+            <small class="fade-in-2"> 7 | Data as of Apr 5, 2017, 12:08:37 PM </small>
+        </span>
+    </h3>
+
+    <p></p>
+    <div class="btn-group">
+        <button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+            Export
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="javascript:void(0)">CSV</a>            
+            </li>
+            <li>                
+                <a href="javascript:void(0)">
+                    
+                    Excel (XLSX)
+                </a>            
+            </li>
+        </ul>
+    </div>
+    <p></p>
+
+    <span>
+        <tabular-data _nghost-lrm-15="">
+        <div _ngcontent-lrm-15="" class="panel panel-default">
+            <div id="searchResults_wrapper" class="dataTables_wrapper no-footer"><table _ngcontent-lrm-15="" class="table table-hover dataTable no-footer" datatable="" id="searchResults" data-done="true" role="grid"><thead _ngcontent-lrm-15="" class="header">                    
+                    <tr _ngcontent-lrm-15="" role="row"><th _ngcontent-lrm-15="" class="sorting_disabled" rowspan="1" colspan="1">Origin</th><th _ngcontent-lrm-15="" class="sorting_disabled" rowspan="1" colspan="1">Destination</th><th _ngcontent-lrm-15="" class="sorting_disabled" rowspan="1" colspan="1">Expeditors Reference</th><th _ngcontent-lrm-15="" class="sorting_disabled" rowspan="1" colspan="1">Status</th><th _ngcontent-lrm-15="" class="sorting_disabled" rowspan="1" colspan="1">Primary Reference</th></tr> 
+                </thead>    
+                
+                
+                <tbody _ngcontent-lrm-15=""><tr role="row" class="odd"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394711732</td><td>In Transit, Docs Received at Destination</td><td>PO - JKGP4</td></tr><tr role="row" class="even"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394711757</td><td>In Transit, Docs Received at Destination</td><td>PO - JQSPD</td></tr><tr role="row" class="odd"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394711976</td><td>In Transit, Docs Received at Destination</td><td>PO - JSB5K</td></tr><tr role="row" class="even"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394711977</td><td>In Transit, Docs Received at Destination</td><td>PO - JN21S</td></tr><tr role="row" class="odd"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394711978</td><td>In Transit, Docs Received at Destination</td><td>PO - JQK9V</td></tr><tr role="row" class="even"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394713222</td><td>In Transit, Docs Received at Destination</td><td>PO - JP9GC</td></tr><tr role="row" class="odd"><td>SHANGHAI, CHINA</td><td>SUFFOLK, VA</td><td>5394713719</td><td>In Transit, Docs Received at Destination</td><td>PO - JP9BH</td></tr></tbody>
+            </table></div>
+        </div>
+    </tabular-data>
+    </span>
+  </div>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- sort order modal -->
+            <div class="modal fade" id="SortOrderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Edit sort order</h4>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <ul class="list-inline">
+                      <li><strong>1</strong></li>
+                      <li style="width:180px"><!-- replace hardcoded width with dynamic width to accomodate longest column name on report -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Expeditors Reference <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Expeditors Reference</a></li>
+                            <li><a href="#">Mode</a></li>
+                            <li><a href="#">Origin</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">None</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default active">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i> Ascending
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i> Descending
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list-inline">
+                      <li><strong>2</strong></li>
+                      <li style="width:180px"><!-- replace hardcoded width with dynamic width to accomodate longest column name on report -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            None <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Expeditors Reference</a></li>
+                            <li><a href="#">Mode</a></li>
+                            <li><a href="#">Origin</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">None</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i> Ascending
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i> Descending
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list-inline">
+                      <li><strong>3</strong></li>
+                      <li style="width:180px"><!-- replace hardcoded width with dynamic width to accomodate longest column name on report -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            None <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Expeditors Reference</a></li>
+                            <li><a href="#">Mode</a></li>
+                            <li><a href="#">Origin</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">None</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i> Ascending
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i> Descending
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul class="list-inline">
+                      <li><strong>4</strong></li>
+                      <li style="width:180px"><!-- replace hardcoded width with dynamic width to accomodate longest column name on report -->
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            None <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Expeditors Reference</a></li>
+                            <li><a href="#">Mode</a></li>
+                            <li><a href="#">Origin</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">None</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-up" aria-hidden="true"></i> Ascending
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i> Descending
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /sort order modal -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!--custom JavaScript-->
+
+    <!-- Dragula -->
+    <script src="js/dragula.js" type="text/javascript"></script>
+
+    <!-- customer -->
+          <script src="js/awesomplete.js" type="text/javascript"></script>
+          
+          <script type="text/javascript">
+              var input = document.getElementById("myinput");
+
+  
+              new Awesomplete(input, {
+                list: [
+                  { label: "Toyota (All) (TOYOTA)", value: "TOYOTA" },
+                  { label: "Dataproducts / Hitatchi Koki (Lvl2) (DATAPROD)", value: "DATAPROD" },
+                  { label: "Outokumpu (Avesta Polarit) (OUTOKUMP)", value: "OUTOKUMP" },
+                  { label: "Nordic Datadistribution (NORDIC)", value: "NORDIC" },
+                  { label: "Croda Surfactants (CRODA)", value: "CRODA" },
+                  { label: "Mitac De Mexico (MITACMEX)", value: "MITACMEX" },
+                  { label: "Tech Data Corporation (TECHDATA)", value: "TECHDATA" },
+                  { label: "Data I/O (DATAIO)", value: "DATAIO" },
+                  { label: "American Standard (All) (AMSTD)", value: "AMSTD" },
+                  { label: "American/Ideal Standard Client Numbers Not To Be Used (AMSTDNOTTOBEUSED)", value: "AMSTDNOTTOBEUSED" },
+                  { label: "Chemetall Gmbh (CHEMETALL)", value: "CHEMETALL" },
+                  { label: "Digital Equipment Corporation (DIGEQUIP)", value: "DIGEQUIP" },
+                  { label: "Target (All) (Includes Mervyn'S, Dayton Hudson, Dsd) (TARGET)", value: "TARGET" },
+                  { label: "Digital Equipment Int'L Ltd. (DIGEQUIPALL)", value: "DIGEQUIPALL" },
+                  { label: "Toyota Unchecked Client Numbers (TOYOTAUNCHECKED)", value: "TOYOTAUNCHECKED" },
+                  { label: "Toyota Client Numbers Not To Be Used (TOYOTANOTTOBEUSE)", value: "TOYOTANOTTOBEUSE" },
+                  { label: "American/Ideal Standard Unchecked Client Numbers (AMSTDUNCHECKED)", value: "AMSTDUNCHECKED" },
+                  { label: "Ann Taylor For Level 2 (ANNTAYLOR)", value: "ANNTAYLOR" },
+                  { label: "Datagenics (DATAGEN)", value: "DATAGEN" },
+                  { label: "Euro Data (EURDAT)", value: "EURDAT" },
+                  { label: "Transportation Business Specialists (TRABUS)", value: "TRABUS" },
+                  { label: "Tasman Golf (TASMAN)", value: "TASMAN" },
+                  { label: "Talcom Benelux B.V. (TALCOM)", value: "TALCOM" },
+                  { label: "Matsushita Electric Industrial Co. (MATSUSHITA)", value: "MATSUSHITA" },
+                  { label: "Munekata Ireland (MUNEKATA)", value: "MUNEKATA" },
+                  { label: "Dataexpert Corp (DATAEX)", value: "DATAEX" },
+                  { label: "British Airways (All) (BRITAIR)", value: "BRITAIR" },
+                  { label: "Applied Digital Access (APPDIG)", value: "APPDIG" },
+                  { label: "Westar Lighting (WESTAR)", value: "WESTAR" },
+                  { label: "Racal Datacom China Region (RACADATA)", value: "RACADATA" },
+                ]
+              });
+
+
+            </script>
+
+            <!-- /customer -->
+
+    <!--multiselect-->
+          <script src="js/bootstrap-multiselect.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              $(function () {
+                  $('#status').multiselect({
+                      includeSelectAllOption: false,
+                      selectAllNumber: false,
+                      allSelectedText: false
+                  });
+                  $('#btnSelected').click(function () {
+                      var selected = $("#status option:selected");
+                      var message = "";
+                      selected.each(function () {
+                          message += $(this).text() + " " + $(this).val() + "\n";
+                      });
+                      alert(message);
+                  });
+              });
+          </script>
+
+          <script type="text/javascript">
+          $(function () {
+              $('#mode').multiselect({
+                  includeSelectAllOption: false,
+                  selectAllNumber: false,
+                  allSelectedText: false
+              });
+              $('#btnSelected').click(function () {
+                  var selected = $("#mode option:selected");
+                  var message = "";
+                  selected.each(function () {
+                      message += $(this).text() + " " + $(this).val() + "\n";
+                  });
+                  alert(message);
+              });
+              });
+          </script><!--/multiselect-->
+
+          <!--milestone dropdown-->
+          <script type="text/javascript">
+            $(".dropdown-menu li a").click(function(){
+
+              $(this).parents(".milestone").find('.selection').text($(this).text());
+              $(this).parents(".milestone").find('.selection').val($(this).text());
+
+            });
+          </script><!--/milestone dropdown-->
+
+          <!--datepicker-->
+          <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+          <script type="text/javascript">
+            $('#sandbox-container .input-daterange').datepicker({
+              todayBtn: "linked",
+              todayHighlight: true,
+              format: 'd-M-yyyy',
+              autoclose: true,
+              keepEmptyValues: true
+              });  
+          </script>
+
+
+          <!--/datepicker-->
+
+          <script src="js/textext.core.js" charset="utf-8"></script>
+          <script src="js/textext.plugin.autocomplete.js" charset="utf-8"></script>
+          <script src="js/textext.plugin.tags.js" charset="utf-8"></script>
+
+
+          <!--origin autocomplete tags-->
+            <script type="text/javascript">
+                  $('.textarea')
+                      .textext({
+                          plugins : 'tags autocomplete'
+                      })
+                      .bind('getSuggestions', function(e, data)
+                      {
+                          var list = [
+                                    
+                                  'NANSHAN (1VS)',
+                                  'NIGGATAHIGASHI (NIH)',
+                                  'ISHOJ, DENMARK (2HK)',
+                                  'WILHELMSHAVEN (WVN)',
+                                  'SHENZHEN (SZX)',
+                                  'SINSHEIM, GERMANY (2TI)',
+                                  'KISHINEV, MOLDOVA (KIV)',
+                                  'ROSH PINA, ISRAEL (RPN)',
+                                  'NANSHA (NNS)',
+                                  'SHENYANG (SHE)',
+                                  'MARSH HARBOUR (MHH)',
+                                  'ASHLAND, IL (3FL)',
+                                  'ENGLISH, IN (GS9)',
+                                  'SHARJAH (SHJ)',
+                                  'SHREVEPORT (SHV)',
+                                  'SPANISH WELLS (SWL)',
+                                  'WASHINGON D.C. (WAS)',
+                                  'OSHAWA (YOO)',
+                                  'KINSHASA (FIH)',
+                                  'HIROSHIMA (HIJ)',
+                                  'KENOSHA, WI (KNA)',
+                                  'MOGADISHU (MGQ)',
+                                  'SHIMIZU (MZU)',
+                                  'NAVA SHEVA (NVS)',
+                                  'ASHLAND, OH (ASL)',
+                                  'NASHVILLE (BNA)',
+                                  'WASHINGTON, IA (3CR)',
+                                  'WASHINGTON, MI (2UG)',
+                                  'CHANGSHA (CSX)',
+                                  'PESHAWAR (PEW)',
+                                  'SHEBOYGAN, WI (SBM)',
+                                  'SHANGHAI (SHA)',
+                                  'SHANNON (SNN)',
+                                  'SHANTOU (SWA)',
+                                  'TASHKENT (TAS)',
+                                  'WASHINGTON, WV (WSH)',
+                                  'ASHWAUBENON, WI (AW2)',
+                                  'BLACKSHEAR, GA (BZ5)',
+                                  'AYRSHIRE, UK (AY6)',
+                                  'DONGSHAN, CHINA (DN6)',
+                                  'DALINGSHAN, CHINA (DS5)',
+                                  'DANSHUI, CHINA (DS6)',
+                                  'SHAJING, CHINA (SX6)',
+                                  'SHILONG CHINA (SX7)',
+                                  'SHIYAN, CHINA (SX8)',
+                                  'SHUWAIKH, KUWAIT (KS6)',
+                                  'WASHINGTON, PA (QFW)',
+                                  'NEOSHO, MO (EOS)',
+                                  'ASHBORO, NC (AH6)',
+                                  'ASHBURN, VA (AH7)',
+                                  'GLENSHAW, PA (GS5)',
+                                  'FLUSHING, MI (FL4)',
+                                  'MARSHFIELD, WI (MFI)',
+                                  'SHEERNESS, UK (LZ5)',
+                                  'NAN SHAN, CHINA (NS7)',
+                                  'BERKSHIRE, UK (KS7)',
+                                  'KUSHIRO, JAPAN (KUH)',
+                                  'ASHTON, PA (AT7)',
+                                  'SHENANDOAH, IA (DH5)',
+                                  'KASHIMA, JAPAN (KS4)',
+                                  'SHAFTNER, CA (FT2)',
+                                  'OSHAWA (430) (2CB)',
+                                  'SHANSHAN, CHINA (SXJ)',
+                                  'BIESHIEM, FRANCE (BH7)',
+                                  'PAN YU SHI, CHINA (PY7)',
+                                  'SHAWNEE, KS (SW6)',
+                                  'SHEPHERDSVILLE,KY (VP6)',
+                                  'SHREWSBURY, MA (SW2)',
+                                  'TOPSHAM, ME, USA (AW7)',
+                                  'SHERWOOD, ND (XS2)',
+                                  'SHIZUOKA CITY (QSZ)',
+                                  'WASHINGTON, GA (IG8)',
+                                  'DESHLER, OH (DSH)',
+                                  'ILLESHEIM, GERMANY (IQ8)',
+                                  'WALDLAUBERSHEIM (WF9)',
+                                  'BLUE ASH, OH (UB1)',
+                                  'ASHDOD (DO7)',
+                                  'TEKONSHA, MI (TM0)',
+                                  'SHANHAIGUAN (SHF)',
+                                  'SHELBY, NC (XU6)',
+                                  'NEW YORK, NY (NYC)',
+                                  'NEW YORK (JFK)',
+                                  'NEWARK (EWR)',
+                                  'LAGUARDIA (LGA)'
+
+                              ],
+                              textext = $(e.target).textext()[0],
+                              query = (data ? data.query : '') || ''
+                              ;
+
+                          $(this).trigger(
+                              'setSuggestions',
+                              { result : textext.itemManager().filter(list, query) }
+                          );
+                      })
+                      ;
+              </script>
+
+          <!--/origin autocomplete tags-->
+
+
+
+
+          <!--destination autocomplete tags-->
+            <script type="text/javascript">
+                  $('#textarea2')
+                      .textext({
+                          plugins : 'tags autocomplete'
+                      })
+                      .bind('getSuggestions', function(e, data)
+                      {
+                          var list = [
+                                    
+                                  'NANSHAN (1VS)',
+                                  'NIGGATAHIGASHI (NIH)',
+                                  'ISHOJ, DENMARK (2HK)',
+                                  'WILHELMSHAVEN (WVN)',
+                                  'SHENZHEN (SZX)',
+                                  'SINSHEIM, GERMANY (2TI)',
+                                  'KISHINEV, MOLDOVA (KIV)',
+                                  'ROSH PINA, ISRAEL (RPN)',
+                                  'NANSHA (NNS)',
+                                  'SHENYANG (SHE)',
+                                  'MARSH HARBOUR (MHH)',
+                                  'ASHLAND, IL (3FL)',
+                                  'ENGLISH, IN (GS9)',
+                                  'SHARJAH (SHJ)',
+                                  'SHREVEPORT (SHV)',
+                                  'SPANISH WELLS (SWL)',
+                                  'WASHINGON D.C. (WAS)',
+                                  'OSHAWA (YOO)',
+                                  'KINSHASA (FIH)',
+                                  'HIROSHIMA (HIJ)',
+                                  'KENOSHA, WI (KNA)',
+                                  'MOGADISHU (MGQ)',
+                                  'SHIMIZU (MZU)',
+                                  'NAVA SHEVA (NVS)',
+                                  'ASHLAND, OH (ASL)',
+                                  'NASHVILLE (BNA)',
+                                  'WASHINGTON, IA (3CR)',
+                                  'WASHINGTON, MI (2UG)',
+                                  'CHANGSHA (CSX)',
+                                  'PESHAWAR (PEW)',
+                                  'SHEBOYGAN, WI (SBM)',
+                                  'SHANGHAI (SHA)',
+                                  'SHANNON (SNN)',
+                                  'SHANTOU (SWA)',
+                                  'TASHKENT (TAS)',
+                                  'WASHINGTON, WV (WSH)',
+                                  'ASHWAUBENON, WI (AW2)',
+                                  'BLACKSHEAR, GA (BZ5)',
+                                  'AYRSHIRE, UK (AY6)',
+                                  'DONGSHAN, CHINA (DN6)',
+                                  'DALINGSHAN, CHINA (DS5)',
+                                  'DANSHUI, CHINA (DS6)',
+                                  'SHAJING, CHINA (SX6)',
+                                  'SHILONG CHINA (SX7)',
+                                  'SHIYAN, CHINA (SX8)',
+                                  'SHUWAIKH, KUWAIT (KS6)',
+                                  'WASHINGTON, PA (QFW)',
+                                  'NEOSHO, MO (EOS)',
+                                  'ASHBORO, NC (AH6)',
+                                  'ASHBURN, VA (AH7)',
+                                  'GLENSHAW, PA (GS5)',
+                                  'FLUSHING, MI (FL4)',
+                                  'MARSHFIELD, WI (MFI)',
+                                  'SHEERNESS, UK (LZ5)',
+                                  'NAN SHAN, CHINA (NS7)',
+                                  'BERKSHIRE, UK (KS7)',
+                                  'KUSHIRO, JAPAN (KUH)',
+                                  'ASHTON, PA (AT7)',
+                                  'SHENANDOAH, IA (DH5)',
+                                  'KASHIMA, JAPAN (KS4)',
+                                  'SHAFTNER, CA (FT2)',
+                                  'OSHAWA (430) (2CB)',
+                                  'SHANSHAN, CHINA (SXJ)',
+                                  'BIESHIEM, FRANCE (BH7)',
+                                  'PAN YU SHI, CHINA (PY7)',
+                                  'SHAWNEE, KS (SW6)',
+                                  'SHEPHERDSVILLE,KY (VP6)',
+                                  'SHREWSBURY, MA (SW2)',
+                                  'TOPSHAM, ME, USA (AW7)',
+                                  'SHERWOOD, ND (XS2)',
+                                  'SHIZUOKA CITY (QSZ)',
+                                  'WASHINGTON, GA (IG8)',
+                                  'DESHLER, OH (DSH)',
+                                  'ILLESHEIM, GERMANY (IQ8)',
+                                  'WALDLAUBERSHEIM (WF9)',
+                                  'BLUE ASH, OH (UB1)',
+                                  'ASHDOD (DO7)',
+                                  'TEKONSHA, MI (TM0)',
+                                  'SHANHAIGUAN (SHF)',
+                                  'SHELBY, NC (XU6)',
+                                  'NEW YORK, NY (NYC)',
+                                  'NEW YORK (JFK)',
+                                  'NEWARK (EWR)',
+                                  'LAGUARDIA (LGA)'
+
+                              ],
+                              textext = $(e.target).textext()[0],
+                              query = (data ? data.query : '') || ''
+                              ;
+
+                          $(this).trigger(
+                              'setSuggestions',
+                              { result : textext.itemManager().filter(list, query) }
+                          );
+                      })
+                      ;
+              </script>
+
+          <!--/destination autocomplete tags-->
+
+
+  </body>
+</html>

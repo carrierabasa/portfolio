@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Run Report | exp.o Visibility</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
+    <link href="css/awesomplete.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visibility <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Your applications</li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Visibility</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tracking</a></li>
+            <li><a href="#">Reporting</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Samantha</a></li>
+            <li><a href="#">Notifications <span class="badge">0</span></a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+
+      <!--breadcrumb-->
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">Run Report</li>
+      </ol>
+      <!--/breadcrumb-->
+
+
+
+      <h2>Shipments</h2>
+
+      <p><a href="#" type="button" class="btn btn-sm btn-primary">Run</a>
+      <button type="button" class="btn btn-sm btn-default">Edit</button>
+      <button type="button" class="btn btn-sm btn-default">Save</button></p>
+
+
+      <!--filters-->
+      <div class="panel panel-default">
+        <div class="panel-body">
+        
+         <div class="filter">
+            <label class="required">*Customer</label><br />
+            <input id="myinput" class="form-control" />
+          </div>
+
+          <div class="filter">
+            <label>Origin</label><br />
+            <input class="form-control" aria-describedby="basic-addon1" value="All" />
+          </div>
+
+          <div class="filter">
+            <label>Destination</label><br />
+            <input class="form-control" aria-describedby="basic-addon1" value="All" />
+          </div>
+
+          <div class="filter">
+            <label>Status</label><br />
+            <select id="status" multiple="multiple">
+              <option value="1">Not onhand</option>
+              <option value="2">Onhand</option>
+              <option value="3">In transit</option>
+              <option value="4">Arrived, not released</option>
+              <option value="5">Released</option>
+              <option value="6">Pending delivery</option>
+              <option value="7">Delivery (completed)</option>
+            </select>
+          </div>
+      
+          <div class="filter">
+            <label>Mode</label><br />
+            <select id="mode" multiple="multiple">
+              <option value="1">Air</option>
+              <option value="2">Ocean</option>
+              <option value="3">Transcon</option>
+              <option value="4">Rail</option>
+              <option value="5">Sea/Air</option>
+              <option value="6">Hub; Trans-shipment</option>
+              <option value="7">Not defined</option>
+            </select>
+          </div>
+              
+          <div class="filter">
+            <label>Expeditors reference</label><br />
+            <textarea class="form-control" rows="2" aria-describedby="helpBlock"></textarea>
+
+            <span id="helpBlock" class="help-block"><small>Enter up to 30 numbers, one per line.</small></span>
+
+          </div>
+
+
+        
+          </div>
+
+
+        </div>
+      </div><!--/filters-->
+
+      
+
+      
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!--custom JavaScript-->
+
+          <!-- customer -->
+          <script src="js/awesomplete.js" type="text/javascript"></script>
+          
+          <script type="text/javascript">
+              var input = document.getElementById("myinput");
+
+  
+              new Awesomplete(input, {
+                list: [
+                  { label: "Toyota (All) (TOYOTA)", value: "TOYOTA" },
+                  { label: "Dataproducts / Hitatchi Koki (Lvl2) (DATAPROD)", value: "DATAPROD" },
+                  { label: "Outokumpu (Avesta Polarit) (OUTOKUMP)", value: "OUTOKUMP" },
+                  { label: "Nordic Datadistribution (NORDIC)", value: "NORDIC" },
+                  { label: "Croda Surfactants (CRODA)", value: "CRODA" },
+                  { label: "Mitac De Mexico (MITACMEX)", value: "MITACMEX" },
+                  { label: "Tech Data Corporation (TECHDATA)", value: "TECHDATA" },
+                  { label: "Data I/O (DATAIO)", value: "DATAIO" },
+                  { label: "American Standard (All) (AMSTD)", value: "AMSTD" },
+                  { label: "American/Ideal Standard Client Numbers Not To Be Used (AMSTDNOTTOBEUSED)", value: "AMSTDNOTTOBEUSED" },
+                  { label: "Chemetall Gmbh (CHEMETALL)", value: "CHEMETALL" },
+                  { label: "Digital Equipment Corporation (DIGEQUIP)", value: "DIGEQUIP" },
+                  { label: "Target (All) (Includes Mervyn'S, Dayton Hudson, Dsd) (TARGET)", value: "TARGET" },
+                  { label: "Digital Equipment Int'L Ltd. (DIGEQUIPALL)", value: "DIGEQUIPALL" },
+                  { label: "Toyota Unchecked Client Numbers (TOYOTAUNCHECKED)", value: "TOYOTAUNCHECKED" },
+                  { label: "Toyota Client Numbers Not To Be Used (TOYOTANOTTOBEUSE)", value: "TOYOTANOTTOBEUSE" },
+                  { label: "American/Ideal Standard Unchecked Client Numbers (AMSTDUNCHECKED)", value: "AMSTDUNCHECKED" },
+                  { label: "Ann Taylor For Level 2 (ANNTAYLOR)", value: "ANNTAYLOR" },
+                  { label: "Datagenics (DATAGEN)", value: "DATAGEN" },
+                  { label: "Euro Data (EURDAT)", value: "EURDAT" },
+                  { label: "Transportation Business Specialists (TRABUS)", value: "TRABUS" },
+                  { label: "Tasman Golf (TASMAN)", value: "TASMAN" },
+                  { label: "Talcom Benelux B.V. (TALCOM)", value: "TALCOM" },
+                  { label: "Matsushita Electric Industrial Co. (MATSUSHITA)", value: "MATSUSHITA" },
+                  { label: "Munekata Ireland (MUNEKATA)", value: "MUNEKATA" },
+                  { label: "Dataexpert Corp (DATAEX)", value: "DATAEX" },
+                  { label: "British Airways (All) (BRITAIR)", value: "BRITAIR" },
+                  { label: "Applied Digital Access (APPDIG)", value: "APPDIG" },
+                  { label: "Westar Lighting (WESTAR)", value: "WESTAR" },
+                  { label: "Racal Datacom China Region (RACADATA)", value: "RACADATA" },
+                ]
+              });
+
+
+            </script>
+
+            <!-- /customer -->
+
+    <!--multiselect-->
+          <script src="js/bootstrap-multiselect.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              $(function () {
+                  $('#status').multiselect({
+                      includeSelectAllOption: false,
+                      selectAllNumber: false,
+                      allSelectedText: false
+                  });
+                  $('#btnSelected').click(function () {
+                      var selected = $("#status option:selected");
+                      var message = "";
+                      selected.each(function () {
+                          message += $(this).text() + " " + $(this).val() + "\n";
+                      });
+                      alert(message);
+                  });
+              });
+          </script>
+
+          <script type="text/javascript">
+          $(function () {
+              $('#mode').multiselect({
+                  includeSelectAllOption: false,
+                  selectAllNumber: false,
+                  allSelectedText: false
+              });
+              $('#btnSelected').click(function () {
+                  var selected = $("#mode option:selected");
+                  var message = "";
+                  selected.each(function () {
+                      message += $(this).text() + " " + $(this).val() + "\n";
+                  });
+                  alert(message);
+              });
+              });
+          </script><!--/multiselect-->
+
+          <!--milestone dropdown-->
+          <script type="text/javascript">
+            $(".dropdown-menu li a").click(function(){
+
+              $(this).parents(".milestone").find('.selection').text($(this).text());
+              $(this).parents(".milestone").find('.selection').val($(this).text());
+
+            });
+          </script><!--/milestone dropdown-->
+
+          <!--datepicker-->
+          <script src="js/bootstrap-datepicker.js" type="text/javascript"></script>
+          <script type="text/javascript">
+            $('#sandbox-container .input-daterange').datepicker({
+              todayBtn: "linked",
+              todayHighlight: true,
+              format: 'd-M-yyyy',
+              autoclose: true,
+              keepEmptyValues: true
+              });  
+          </script>
+
+
+          <!--/datepicker-->
+
+
+  </body>
+</html>

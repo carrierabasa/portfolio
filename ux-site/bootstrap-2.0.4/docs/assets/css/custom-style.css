@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  background-color:#eee;
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+
+.well-summary {
+  min-height: 20px;
+  padding: 7px;
+  margin: 10px 0 10px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.well-filters {
+  margin: 0 0 10px 0;
+}
+
+#status ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#status ul li { 
+	display: inline-block;
+	border-right:#eee 1px solid;
+	padding:10px;
+	zoom: 1;
+    *display: inline;
+	vertical-align:top;
+}
+
+#status li:last-child {
+	border-right:none;
+}
+
+#status li:hover {
+	background-color:#f5f5f5;
+}
+
+#status a:hover {
+	text-decoration:none;
+}
+
+.active-pending {
+	background-color:#d9edf7;
+}
+
+.active-delivered {
+	background-color:#dff0d8;
+}
+
+.active-exceptions {
+	background-color:#f2dede;
+}
+
+h2 {
+	font-size:18px;
+	font-weight:normal;
+	line-height:normal;
+}
+
+#filters ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align:right;
+	
+}
+
+#filters ul li { 
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	vertical-align:top;
+}
+
+table {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+		  
+}
+
+
+
+table .references {
+  border:none;
+}
+
+.references td {
+  padding: 2px 7px 2px 0;
+  line-height: 14px;
+  text-align: left;
+  vertical-align: top;
+  border-top: none;
+}
+
+form {
+	margin-bottom:0;
+}
+
+/* Tooltip and popover styles used for prototype purposes only. Need actual developer to create valid code that will work cross-browser.  */
+
+a.mytooltip {
+  position: relative;
+  display: inline;
+}
+a.mytooltip span {
+  position: absolute;
+  width:140px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+a.mytooltip span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 53%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+a:hover.mytooltip span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
+  z-index: 999;
+}
+
+a.mytooltip2 {
+  position: relative;
+  display: inline;
+}
+
+#hackpopover a span {display: none;}
+
+#hackpopover a:hover span {
+	display: block;
+   	position: absolute; top: 60%; left: 68%; 
+   	padding: 5px; 
+   	margin: 10px; 
+   	z-index: 100;
+   	color: #AAA; 
+   	background-color: #fff; 
+   	text-align: center;
+	border: #ddd 1px solid;
+	  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	}
+
+table .references-popover {
+  border:none;
+  background-color:#fff;
+}
+
+.references-popover td {
+  padding: 3px;
+  line-height: 14px;
+  text-align: left;
+  vertical-align: top;
+  border-top: none;
+  background-color:#fff;
+}
+
+.references-popover tbody {
+  background-color:#fff;
+}
+

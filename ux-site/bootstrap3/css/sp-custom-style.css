@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top:80px;
+  background-color:#eee;
+}
+
+.sp-navbar-inverse .sp-navbar-brand {
+  color: #fff;
+}
+
+.sp-main-container{
+	width:800px;
+	background-color:#fff;
+	border: thin #ddd solid;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.sp-signin-container{
+	width:500px;
+	background-color:#fff;
+	border: thin #ddd solid;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.sp-page-header {
+  margin: 20px 0 20px;
+}
+
+.container-form {
+	background-color:#eee;
+	padding:15px;
+	border:thin #ddd solid;
+}
+
+.create-user-fieldset {
+  margin: 0 0 15px 0;
+}
+
+.create-user-legend {
+  display: inline-block;
+  font-size:inherit;
+  margin-bottom: 5px;
+  font-weight: bold;
+  border-bottom: none;
+}
+
+
+	
+
+

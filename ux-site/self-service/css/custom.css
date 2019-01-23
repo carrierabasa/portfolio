@@ -1,0 +1,223 @@
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #eee;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.filter {
+  display: inline-block;
+  vertical-align:top;
+  margin: 0 2px 15px 2px;
+}
+
+.date {
+  width: 70%; 
+}
+
+label {
+  font-weight: 400;
+}
+
+
+/* to simulate streaming of results */
+/* make keyframes that tell the start state and the end state of our object */
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  animation:fadeIn ease-in .75;
+  animation-fill-mode:forwards;
+  animation-duration:.5s;
+  animation-delay: .25s;
+}
+
+.fade-in-2 {
+  opacity:0;  /* make things invisible upon start */
+  animation:fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration:.25s;
+  animation-delay: .15s;
+}
+
+.processing-panel {
+  background-color: #f5f5f5;
+}
+
+.milestone > a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .hide-arrow::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.required {
+  font-weight: 700;
+}
+
+.field-heading {
+  font-size: 13px;
+  }
+
+.available-field > .list-group-item {
+  font-size: 13px;
+}
+
+.available-field > li:hover {
+  background-color: #f5f5f5;
+}
+
+/*
+.fa-bars {
+  color: #fff
+}
+
+li > .fa-bars:hover {
+  color: #000
+}
+*/
+
+
+.field-options i {
+    color:#fff;
+    font-size: 14px;
+    padding-left: 5px;
+    vertical-align: top;
+    float: right;
+}
+
+.available-field > li:hover i {  
+    color: #ccc;   
+}
+
+.available-field .field-options i:hover {  
+    color: #333;   
+}
+
+.field-name {
+  float: left;
+  width: 80%;
+  
+}
+
+.field-options {
+  float: right;
+  width: 20%;
+}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling icon */
+    content: "\f078";    /* adjust as needed, taken from fontawesome */
+    float: right;        /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f054";    /* adjust as needed, taken from fontawesome */
+}
+
+.remove-field {
+  margin-left:3px;
+  color:#ccc;
+}
+
+.remove-field:hover {
+  color:#333;
+}
+
+.column {
+  color: #333;
+  background-color: #f5f5f5;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin:5px 2px;
+}
+
+.popover-content {
+  font-size: 12px;
+}
+
+.field-message {
+  font-size: 13px;
+}
+
+.box {
+  position: absolute;
+  top: 122px;
+  left: 65px;
+  background-color: #fff;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  z-index: 100;
+}
+
+
+
+.transform {
+  -webkit-transition: all 200ms ease;  
+  -moz-transition: all 200ms ease;  
+  -o-transition: all 200ms ease;  
+  -ms-transition: all 200ms ease;  
+  transition: all 200ms ease;
+}
+
+.transform-active {
+  background-color: #fff;
+  width: 375px;
+  height: 141px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  opacity: 1;
+  padding: 7px;
+  font-size: 12px;
+  color: #333;
+  
+}
+
+
+
+
+
+
+
+
+
+
+

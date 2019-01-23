@@ -1,0 +1,41 @@
+.text-core .text-wrap .text-tags {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 3px 35px 3px 3px;
+  cursor: text;
+}
+.text-core .text-wrap .text-tags.text-tags-on-top {
+  z-index: 2;
+}
+.text-core .text-wrap .text-tags .text-tag {
+  float: left;
+}
+.text-core .text-wrap .text-tags .text-tag .text-button {
+  border-radius: 4px;  
+  position: relative;
+  float: left;
+  background: #337ab7;
+  color: #fff;
+  padding: 3px 25px 3px 5px;
+  margin: 0 2px 2px 0;
+  cursor: pointer;
+  display: inline;
+}
+.text-core .text-wrap .text-tags .text-tag .text-button i.text-remove {
+  position: absolute;
+  right: 7px;
+  top: 6px;
+  display: block;
+  opacity: .5;
+
+}
+.text-core .text-wrap .text-tags .text-tag .text-button i.text-remove:hover {
+  opacity: 1;
+}
+.text-core .text-wrap .text-tags .text-tag .text-button i.text-remove:active {
+  opacity: 1;
+}

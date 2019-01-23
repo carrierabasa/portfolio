@@ -1,0 +1,122 @@
+html {
+  position: relative;
+  min-height:100%;
+}
+
+body {
+  	background-color: #E7E8E8;
+	min-height:100%;
+}
+
+.container {
+	background-color:#fff;	
+	height:100%;
+  	min-height:100%;
+}
+	
+.well {
+	max-width:450px;
+	margin: 0 auto;
+	margin-bottom:15px;
+}
+
+.help {
+	text-align:center;
+	max-width: 450px;
+	margin: 0 auto;
+	margin-bottom:10px;
+	}
+
+.content {
+	max-width: 450px;
+	margin: 0 auto;
+	margin-bottom:15px;
+	border-bottom:#ddd 1px solid;
+	}
+
+.content:last-child {
+    border-bottom:none;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.header-image {
+	background:#000 url(http://www.expeditors.com/images/interior/header/about-us.jpg) no-repeat right top;
+	height:100px;
+	margin:0 auto;
+	line-height:100px;
+	}
+
+.expd-logo {
+	background:#000 url(../../sign-in-02/expd-logo.png) no-repeat left top;
+	height:100px;
+	margin:0 auto;
+	line-height:100px;
+	}
+
+.expd-logo-sm {
+	background:#000 url(../../sign-in-02/expd-logo-sm-web.png) no-repeat center;
+	height:60px;
+	margin:0 auto;
+	line-height:60px;
+	}
+	
+.expo-branding img {
+	display:block;
+ 	margin: 20px auto 5px auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #E7E8E8;
+}
+
+.sm-footer {
+  width: 100%;
+  background-color: #E7E8E8;
+}
+
+
+.tagline {
+	background: url(../../sign-in-02/youdbe-wht.jpg) no-repeat right top;
+	margin:0 auto;
+	height:35px;
+	}
+	
+.footer-bar {
+  	background-color:#000;
+  	height: 16px;
+	margin:0;
+	}
+	
+.copyright {
+	color:#999;
+	font-size:12px;
+	padding:5px;
+	}
+
+.center {
+	text-align:center;
+}
